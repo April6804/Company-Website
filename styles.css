@@ -1,3 +1,7 @@
+body {
+  margin:0;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -7,7 +11,7 @@ ul {
 }
 
 li {
-  float: left;
+  float: bottom-right;
 }
 
 li a {
@@ -21,9 +25,52 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  transition: color .15s ease-in;
+  color: Orange;
 }
 
 .active {
   color: firebrick;
 }
+
+.logo {
+  max-width: 80%;
+  min-width: 300px;
+  height: auto;
+}
+
+nav {
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li a {
+  display: block;
+  line-height: 3em;
+  padding: 2em 1em;
+  text-decoration: none;
+}
+
+.package {
+  max-width: 100%;
+
+}
+
+/* Start Media Query */
+@media only screen and (min-width:600px){
+  .logo {
+
+  }
+
+}
+/* End Media Query */
