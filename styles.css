@@ -1,5 +1,24 @@
 body {
   margin:0;
+  background-color: #333;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-family: Helvetica, Arial, Sans-serif;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  border-bottom: solid;
+  border-color: darkgrey;
+}
+
+h1 {
+  color: firebrick;
+  text-align: center;
+  font-family: Helvetica, Arial, Sans-serif;
 }
 
 ul {
@@ -29,6 +48,11 @@ li a:hover:not(.active) {
   color: Orange;
 }
 
+.active:hover {
+  transition: color .15s ease-in;
+  color: Orange;
+}
+
 .active {
   color: firebrick;
 }
@@ -37,6 +61,7 @@ li a:hover:not(.active) {
   max-width: 80%;
   min-width: 300px;
   height: auto;
+  background-position: bottom right;
 }
 
 nav {
@@ -63,13 +88,54 @@ nav ul li a {
 
 .package {
   max-width: 100%;
+}
 
+.product {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+
+footer {
+  background-color: firebrick;
+  text-align:center;
+  line-height: 60px;
+  color:white;
+  font-family: Helvetica, Arial, Sans-serif;
+}
+
+h2 {
+  font-family: Helvetica, Arial, Sans-serif;
+  text-align:center;
+  text-decoration: none;
+}
+
+.mlinks{
+  font-family: Helvetica, Arial, Sans-serif;
+  text-decoration: none;
+  color: white;
 }
 
 /* Start Media Query */
-@media only screen and (min-width:600px){
-  .logo {
+@media only screen and (max-width:600px){
+  .links {
+    visibility: hidden;
+  }
+  .active {
+    visibility: hidden;
+  }
+  .logo{
+    margin-left: 21%;
+    margin-right: 13%;
+  }
 
+}
+@media only screen and (min-width:600px){
+  .mlinks {
+    visibility: hidden;
   }
 
 }
