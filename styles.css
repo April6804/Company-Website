@@ -58,9 +58,10 @@ li a:hover:not(.active) {
 }
 
 .logo {
-  max-width: 80%;
+  max-width: 300px;
   min-width: 300px;
   height: auto;
+  line-height: 150px;
   background-position: bottom right;
 }
 
@@ -119,6 +120,26 @@ h2 {
   color: white;
 }
 
+.mlinks:hover{
+  transition: color .15s ease-in;
+  color: Orange;
+}
+
+.amlinks{
+  font-family: Helvetica, Arial, Sans-serif;
+  text-decoration: none;
+  color: firebrick;
+}
+
+.amlinks:hover{
+  transition: color .15s ease-in;
+  color: Orange;
+}
+
+h2 {
+  font-weight:normal;
+}
+
 /* Start Media Query */
 @media only screen and (max-width:600px){
   .links {
@@ -135,8 +156,32 @@ h2 {
 }
 @media only screen and (min-width:600px){
   .mlinks {
-    visibility: hidden;
+    display: none;
   }
+  .amlinks {
+    display: none;
+  }
+  #parent {
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  .child {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+  }
+  p {
+    border-bottom: none;
+    font-size: 20px;
+    
+  }
+  .product {
+    padding-top: 50px;
+    align: center;
+  }
+
 
 }
 /* End Media Query */
