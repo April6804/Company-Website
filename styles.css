@@ -141,7 +141,7 @@ h2 {
 }
 
 /* Start Media Query */
-@media only screen and (max-width:600px){
+@media only screen and (max-width:750px){
   .links {
     visibility: hidden;
   }
@@ -154,7 +154,7 @@ h2 {
   }
 
 }
-@media only screen and (min-width:600px){
+@media only screen and (min-width:750px){
   .mlinks {
     display: none;
   }
@@ -166,20 +166,22 @@ h2 {
     height: auto;
     white-space: nowrap;
     overflow-x: auto;
+    display: flex;
   }
   .child {
-    display: inline-block;
     width: 50%;
     height: 100%;
+    margin-top: 100px;
   }
   p {
     border-bottom: none;
     font-size: 20px;
-    
+
   }
   .product {
     padding-top: 50px;
     align: center;
+    width: 400px;
   }
 
 
