@@ -181,8 +181,11 @@ h2 {
   .product {
     padding-top: 50px;
     align: center;
-    width: 400px;
+    width: 60%;
+    min-width: 390px;
+    max-width: 390px;
   }
+
 
 
 }
