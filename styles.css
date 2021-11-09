@@ -87,8 +87,17 @@ nav ul li a {
   text-decoration: none;
 }
 
+.package img {
+  max-width: 100%;
+  max-height:800px
+}
+
 .package {
   max-width: 100%;
+  background: url("hpbox.png") no-repeat,
+  linear-gradient(#ea7d30 0%, #d95b2f 25%, #c93a30 50%,#b52432 75%, #ba2432 100%);
+  background-position: left;
+  background-size: contain;
 }
 
 .product {
