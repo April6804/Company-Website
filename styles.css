@@ -149,6 +149,16 @@ h2 {
   font-weight:normal;
 }
 
+.shopproduct{
+  max-width: 400px;
+  padding-left: 100px;
+}
+
+.productname{
+  color: firebrick;
+
+}
+
 /* Start Media Query */
 @media only screen and (max-width:750px){
   .links {
@@ -204,6 +214,7 @@ h2 {
     padding: 10px;
     height: 300px;
   }
+
 
   .row:after {
     content: "";
