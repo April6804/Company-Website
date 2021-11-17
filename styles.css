@@ -159,6 +159,39 @@ h2 {
 
 }
 
+input[type=text], select, textarea {
+ width: 100%;
+ padding: 12px;
+ border: 2px solid Firebrick;
+ border-radius: 6px;
+ box-sizing: border-box;
+ margin-top: 6px;
+ margin-bottom: 16px;
+ resize: vertical;
+
+}
+
+input[type=submit] {
+ background-color: Firebrick;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+input[type=submit]:hover {
+ background-color: Orange;
+}
+
+.container {
+ font-family: Helvetica;
+ Color: Firebrick;
+ border-radius: 5px;
+ background-color: #333;
+ padding: 20px;
+} 
+
 /* Start Media Query */
 @media only screen and (max-width:750px){
   .links {
