@@ -90,14 +90,16 @@ nav ul li a {
 
 .package img {
   max-width: 100%;
-  max-height:800px
+  max-height:600px;
+  margin: auto;
+  display: block;
 }
 
 .package {
   max-width: 100%;
   background: url("hpbox.png") no-repeat,
   linear-gradient(#ea7d30 0%, #d95b2f 25%, #c93a30 50%,#b52432 75%, #ba2432 100%);
-  background-position: left;
+  background-position: center;
   background-size: contain;
 }
 
