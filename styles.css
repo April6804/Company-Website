@@ -69,10 +69,10 @@ li a:hover:not(.active) {
 .logo {
     max-width: 400px;
     width: 100%;
-    min-width: 300px;
+    min-width: 250px;
     height: auto;
     /* line-height: 150px; */
-  margin-left: 21%;
+  margin-left: 10%;
   margin-right: 13%;
 }
 nav {
