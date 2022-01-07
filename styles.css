@@ -1,26 +1,36 @@
 body {
   margin:0;
+  padding:0;
   background-color: #333;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 16px;
 }
 
 p {
   color: white;
-  text-align: center;
+  /* text-align: center; */
   font-family: Helvetica, Arial, Sans-serif;
-  line-height: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  border-bottom: solid;
-  border-color: darkgrey;
+  /* line-height: 30px; */
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+  /* padding-bottom: 40px; */
+  /* border-bottom: solid; */
+  /* border-color: darkgrey; */
 }
 
 h1 {
-  color: firebrick;
+  color: orange;
+  font-weight: normal;
   text-align: center;
-  font-family: Helvetica, Arial, Sans-serif;
+  letter-spacing: 0.03em;
 }
 
+/* MOBLE NAV LINKS */
+h2 {
+  text-align:center;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -31,17 +41,15 @@ ul {
 }
 
 li {
-  float: bottom-right;
 }
 
 li a {
   display: block;
   color: firebrick;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
-  font-size:30px;
-  font-family: Helvetica, Arial, Sans-serif;
+  /* font-size:30px; */
 }
 
 li a:hover:not(.active) {
@@ -59,16 +67,17 @@ li a:hover:not(.active) {
 }
 
 .logo {
-  max-width: 300px;
-  min-width: 300px;
-  height: auto;
-  line-height: 150px;
-  background-position: bottom right;
+    max-width: 400px;
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+    /* line-height: 150px; */
+  margin-left: 21%;
+  margin-right: 13%;
 }
-
 nav {
   background-color: black;
-  margin: 0;
+  margin: 20px 0 0 0;
   overflow: hidden;
 
 }
@@ -84,10 +93,24 @@ nav ul li {
 nav ul li a {
   display: block;
   line-height: 3em;
-  padding: 2em 1em;
+  /* padding: 10px; */
   text-decoration: none;
 }
 
+/* Featured stuff under the hero */
+#parent{
+    margin: auto;
+    width:90%;
+
+}
+#parent p{
+    text-align: left;
+    line-height: 1.2;
+    font-size: 1.5em;
+}
+#parent img{
+    max-width: 100%;
+}
 .package img {
   max-width: 100%;
   max-height:600px;
@@ -101,41 +124,14 @@ nav ul li a {
   linear-gradient(#ea7d30 0%, #d95b2f 25%, #c93a30 50%,#b52432 75%, #ba2432 100%);
   background-position: center;
   background-size: contain;
+  margin: 40px auto;
 }
 
-.product {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: block;
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 70%;
-}
-
-footer {
-  background-color: firebrick;
-  text-align: center;
-  line-height: 60px;
-  color:white;
-  font-family: Helvetica, Arial, Sans-serif;
-  position: sticky;
-  top: 200px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-}
-
-h2 {
-  font-family: Helvetica, Arial, Sans-serif;
-  text-align:center;
-  text-decoration: none;
-}
-
+/* link color changes */
 .mlinks{
-  font-family: Helvetica, Arial, Sans-serif;
   text-decoration: none;
-  color: firebrick;
+  transition: color .15s ease-in;
+  color: #ef4137;
 }
 
 .mlinks:hover{
@@ -144,7 +140,6 @@ h2 {
 }
 
 .amlinks{
-  font-family: Helvetica, Arial, Sans-serif;
   text-decoration: none;
   color: Orange;
 }
@@ -154,19 +149,14 @@ h2 {
   color: Orange;
 }
 
-h2 {
-  font-weight:normal;
-}
-
 .shopproduct{
   max-width: 400px;
 }
 
 .productname{
   color: firebrick;
-
 }
-
+/* FORM STYLES */
 input[type=text], select, textarea {
  width: 100%;
  padding: 12px;
@@ -192,16 +182,22 @@ input[type=submit]:hover {
  background-color: Orange;
 }
 
+form{
+  max-width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
- font-family: Helvetica;
- Color: Firebrick;
+ color: Firebrick;
  border-radius: 5px;
  background-color: #333;
  padding: 20px;
 }
 
 .help {
-  Color: White;
+  color: White;
   font-size: 55px;
   background-color: firebrick;
   margin-bottom:50px;
@@ -218,13 +214,17 @@ input[type=submit]:hover {
   margin-bottom: 115px;
 }
 
-form{
-  max-width: 700px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
+
+footer {
+  background-color: firebrick;
+  text-align: center;
+  line-height: 60px;
+  color:white;
+  font-family: Helvetica, Arial, Sans-serif;
+ margin-top:40px;
+  padding: 10px;
+}
 
 
 
@@ -237,10 +237,7 @@ form{
   .active {
     visibility: hidden;
   }
-  .logo{
-    margin-left: 21%;
-    margin-right: 13%;
-  }
+
 
   .column img{
     display: block;
@@ -276,7 +273,7 @@ form{
     width: 50%;
     height: 100%;
     margin-top: 100px;
-    
+
   }
   p {
     border-bottom: none;
