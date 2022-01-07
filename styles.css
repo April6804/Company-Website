@@ -27,6 +27,7 @@ h1 {
 
 /* MOBLE NAV LINKS */
 h2 {
+    color: orange;
   text-align:center;
   font-weight: normal;
   letter-spacing: 0.03em;
@@ -65,15 +66,19 @@ li a:hover:not(.active) {
 .active {
   color: Orange;
 }
-
-.logo {
+/* LOGO shows in mobile and it's li has full width across nav. */
+nav #logo{
+  display: inline-block;
+  list-style-type: none;
+  width:100%;
+}
+#logo img{
     max-width: 400px;
-    width: 100%;
+    width: 90%;
     min-width: 250px;
     height: auto;
     /* line-height: 150px; */
-  margin-left: 10%;
-  margin-right: 13%;
+  margin:auto;
 }
 nav {
   background-color: black;
@@ -84,17 +89,57 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex; */
 }
 nav ul li {
-  display: inline-block;
+    /* remove while on mobile devices */
+    display: none;
+  /* display: inline-block; */
   list-style-type: none;
 }
+
 nav ul li a {
   display: block;
   line-height: 3em;
   /* padding: 10px; */
   text-decoration: none;
+}
+
+.links {
+    display:none;
+}
+.active {
+    display:none;
+}
+
+/* link color changes */
+.mlinks{
+  text-decoration: none;
+  transition: color .15s ease-in;
+  color: #ef4137;
+}
+
+.mlinks:hover{
+  transition: color .15s ease-in;
+  color: White;
+}
+
+.amlinks{
+  text-decoration: none;
+  color: Orange;
+}
+
+.amlinks:hover{
+  transition: color .15s ease-in;
+  color: Orange;
+}
+
+.shopproduct{
+  max-width: 400px;
+}
+
+.productname{
+  color: firebrick;
 }
 
 /* Featured stuff under the hero */
@@ -127,36 +172,7 @@ nav ul li a {
   margin: 40px auto;
 }
 
-/* link color changes */
-.mlinks{
-  text-decoration: none;
-  transition: color .15s ease-in;
-  color: #ef4137;
-}
-
-.mlinks:hover{
-  transition: color .15s ease-in;
-  color: White;
-}
-
-.amlinks{
-  text-decoration: none;
-  color: Orange;
-}
-
-.amlinks:hover{
-  transition: color .15s ease-in;
-  color: Orange;
-}
-
-.shopproduct{
-  max-width: 400px;
-}
-
-.productname{
-  color: firebrick;
-}
-/* FORM STYLES */
+/* CONTACT FORM STYLES */
 input[type=text], select, textarea {
  width: 100%;
  padding: 12px;
@@ -184,9 +200,12 @@ input[type=submit]:hover {
 
 form{
   max-width: 700px;
+  width:90%;
+  color:white;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top:20px;
 }
 
 .container {
@@ -195,26 +214,49 @@ form{
  background-color: #333;
  padding: 20px;
 }
-
+/* END CONTACT STYLES */
+/* START FAQ STYLES */
 .help {
   color: White;
-  font-size: 55px;
+  font-size: 2em;
   background-color: firebrick;
   margin-bottom:50px;
   padding-top:20px;
   padding-bottom:20px;
 }
+.faq p{
+    width:80%;
+    margin:auto;
+}
+/* END FAQ STYLES */
+
 
 .column h1{
-  color: white;
-  font-size: 60px;
+  color: orange;
+  /* font-size: 60px; */
 }
-
+.column p{
+    /* text-align: center; */
+    font-size: 1.2em;
+    line-height: 1.2;
+    width: 350px;
+    margin: auto;
+}
 .row{
   margin-bottom: 115px;
 }
+ .column img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 320px; */
+  }
 
-
+  .row iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 footer {
   background-color: firebrick;
@@ -229,31 +271,8 @@ footer {
 
 
 
-/* Start Media Query */
-@media only screen and (max-width:750px){
-  .links {
-    visibility: hidden;
-  }
-  .active {
-    visibility: hidden;
-  }
 
 
-  .column img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 320px;
-  }
-
-  .row iframe{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-}
 @media only screen and (min-width:750px){
   .mlinks {
     display: none;
@@ -281,7 +300,6 @@ footer {
 
   }
   .product {
-    padding-top: 50px;
     align: center;
     width: 60%;
     min-width: 390px;
@@ -295,22 +313,20 @@ footer {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px;
+    /* height: 300px; */
   }
 
   .row:after {
     content: "";
     display: table;
     clear: both;
+    margin:bottom:30px;
   }
 
   .shopproduct{
     padding-left: 50px;
   }
 
-  .column h1{
-    padding-top: 55px;
-  }
 
 
 
